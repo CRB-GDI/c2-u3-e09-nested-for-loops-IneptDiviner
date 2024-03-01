@@ -4,19 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("please enter a row width");
-            int row = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter a row quantinty");
-            int quantity = int.Parse(Console.ReadLine());
-            string ast = "*";
-            for (int countRowHeight = 0; countRowHeight < row; countRowHeight++)
+            Console.WriteLine("please enter a number of rows");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter a number of ");
+            int columns = int.Parse(Console.ReadLine());
+            Console.WriteLine(" | ");
+            Console.WriteLine(" V ");
+            Console.WriteLine(" ");
+            for (int col = 1; col <= columns; col++)
             {
-                Console.WriteLine(ast);
-                for (int countRowWidth = 1; countRowWidth < row; countRowWidth++)
-                { 
-                    Console.Write(ast);
-                }
+                Console.Write("{0, 3}*");
+
             }
+
+            
         }
     }
 }
