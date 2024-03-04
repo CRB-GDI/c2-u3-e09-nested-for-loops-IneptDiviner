@@ -12,12 +12,18 @@
             Console.WriteLine(" | ");
             Console.WriteLine(" V ");
             Console.WriteLine(" ");
-            for (int col = 1; col <= columns; col++)
+
+            for (int col = 0; columns > col; col++)
             {
             
+                for (int row = 0; rows > row; row++)
+                {
+                    Console.Write(ast);
+                }
+                Console.WriteLine();
+
             }
 
-            
         }
     }
 }
